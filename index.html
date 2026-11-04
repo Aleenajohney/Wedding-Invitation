@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Aleena Johney & Richard Johnson | Betrothal & Wedding Invitation</title>
+  
+  <!-- Refined Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Great+Vibes&family=MonteCarlo&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Base Global Palette */
+      --bg-gradient-start: #FFF9FA;
+      --bg-gradient-mid: #FDF0F3;
+      --bg-gradient-end: #F5E5E9;
+      --card-bg: rgba(255, 255, 255, 0.88);
+      --card-border: rgba(220, 155, 140, 0.45);
+      --card-shadow: 0 16px 36px -8px rgba(140, 50, 80, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+      
+      --text-main: #3E1B28;
+      --text-sub: #5C2D40;
+      --text-muted: #8A586E;
+      
+      --rose-gold-light: #FCECE8;
+      --rose-gold-mid: #E89A88;
+      --rose-gold-rich: #C86D5B;
+      --wine-primary: #8E2D53;
+      --wine-dark: #631B37;
+      --gold-accent: #E5A93C;
+      --gold-sparkle: #FBE5B5;
+      
+      --grad-rose: linear-gradient(135deg, #FF7E8A 0%, #D8486D 48%, #8E2D53 100%);
+      --grad-gold: linear-gradient(135deg, #F9E7BA 0%, #E5A93C 50%, #B87B1F 100%);
+      
+      /* Classy Burgundy & Royal Gold Seal Palette */
+      --burgundy-deep: #4A0E17;
+      --burgundy-mid: #6B1724;
+      --burgundy-rich: #851C2C;
+      --gold-light: #FBF0B9;
+      --gold-metallic: #D4AF37;
+      --gold-deep: #997A15;
+      --grad-seal-wax: radial-gradient(circle at 35% 30%, #8A1E2E 0%, #5C121D 55%, #35080E 100%);
+      --grad-seal-rim: linear-gradient(135deg, #FBF0B9 0%, #D4AF37 50%, #997A15 100%);
+      --grad-btn: linear-gradient(135deg, #7A192B 0%, #4D0E19 100%);
+      
+      --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-script: 'Great Vibes', cursive;
+      --font-romantic: 'Alex Brush', 'MonteCarlo', cursive;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      /* Pastel Palette Tokens (Engagement) */
+      --pastel-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 248, 0.92) 50%, rgba(246, 252, 250, 0.9));
+      --pastel-border: rgba(228, 185, 195, 0.6);
+      --pastel-accent: #D9889C;
+      --pastel-pill-bg: linear-gradient(135deg, #FAD0C4 0%, #FFD1FF 100%);
+      --pastel-pill-text: #733448;
+
+      /* Rich Dark Jewel Tones (Wedding: Opposite of Pastels) */
+      --dark-card-bg: linear-gradient(150deg, #1A0914 0%, #2A0E1E 55%, #180611 100%);
+      --dark-card-border: rgba(212, 175, 55, 0.45);
+      --dark-card-shadow: 0 20px 48px -10px rgba(18, 4, 12, 0.65), 0 6px 18px rgba(0, 0, 0, 0.35);
+      --dark-text-main: #FFF4F7;
+      --dark-text-sub: #EED2DC;
+      --dark-text-muted: #D1A7B9;
+      --dark-pill-bg: linear-gradient(135deg, #997A15 0%, #D4AF37 50%, #7A5F0E 100%);
+      --dark-pill-text: #1F0712;
+      --dark-box-bg: rgba(22, 6, 15, 0.8);
+      --dark-box-border: rgba(212, 175, 55, 0.35);
+      --dark-tile-bg: rgba(44, 14, 28, 0.9);
+      --dark-btn-bg: linear-gradient(135deg, #D4AF37 0%, #AA8520 100%);
+      --dark-btn-text: #1F0712;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-gradient-start);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at 10% 10%, #FFF5F7 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, #FDE4EB 0%, transparent 45%),
+                  radial-gradient(circle at 50% 50%, #FFFDFD 0%, #FBEBF0 100%);
+      position: relative;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Ambient Shimmer Particles Canvas */
+    #sparkleCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Architectural Outer Border Frame */
+    .page-frame {
+      position: fixed;
+      inset: 10px;
+      border: 1px solid rgba(212, 140, 125, 0.4);
+      pointer-events: none;
+      z-index: 15;
+      border-radius: 12px;
+    }
+    .page-frame::after {
+      content: '';
+      position: absolute;
+      inset: 4px;
+      border: 1px dashed rgba(175, 68, 98, 0.22);
+      border-radius: 8px;
+    }
+
+    /* Floating Audio Button */
+    .audio-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 70;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border: 1.5px solid var(--gold-metallic);
+      color: var(--burgundy-rich);
+      padding: 10px 18px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 8px 24px rgba(107, 23, 36, 0.25);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      min-height: 44px;
+    }
+    .audio-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(107, 23, 36, 0.35);
+      border-color: var(--burgundy-rich);
+    }
+    .audio-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #D4AF37;
+      box-shadow: 0 0 8px #D4AF37;
+    }
+    .audio-dot.off {
+      background: #A0AEC0;
+      box-shadow: none;
+    }
+
+    /* Initial Reveal Envelope Overlay */
+    .envelope-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: radial-gradient(circle at center, #FFF8FA 0%, #F8E3E9 65%, #ECD0D9 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), transform 0.85s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.85s;
+    }
+    .envelope-overlay.opened {
+      opacity: 0;
+      transform: scale(1.08);
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .envelope-card {
+      max-width: 480px;
+      width: 100%;
+      padding: 44px 28px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1.5px solid rgba(212, 175, 55, 0.5);
+      box-shadow: 0 25px 60px rgba(107, 23, 36, 0.25), inset 0 0 40px rgba(255, 240, 244, 0.9);
+      position: relative;
+    }
+    .envelope-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--burgundy-rich);
+      margin-bottom: 12px;
+    }
+    .envelope-names {
+      font-family: var(--font-romantic);
+      font-style: italic;
+      font-size: clamp(3rem, 8.5vw, 4.4rem);
+      font-weight: 500;
+      color: var(--burgundy-deep);
+      line-height: 1.15;
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 12px rgba(107, 23, 36, 0.18);
+    }
+
+    /* Classy Burgundy & Golden Wax Seal Button */
+    .wax-seal-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin: 10px auto 22px;
+      display: inline-block;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      outline: none;
+    }
+    .wax-seal-btn:hover {
+      transform: scale(1.08) rotate(3deg);
+    }
+    .wax-seal-btn:active {
+      transform: scale(0.96);
+    }
+    .wax-seal-body {
+      width: 114px;
+      height: 114px;
+      border-radius: 50%;
+      background: var(--grad-seal-wax);
+      box-shadow: 0 14px 32px rgba(53, 8, 14, 0.5),
+                  0 0 0 3px rgba(212, 175, 55, 0.75),
+                  inset 0 3px 6px rgba(251, 240, 185, 0.4),
+                  inset 0 -4px 10px rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .wax-seal-body::before {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(249, 231, 186, 0.7);
+    }
+    .wax-seal-body::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      animation: pulseGlow 2.5s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.35; }
+      50% { transform: scale(1.1); opacity: 0.85; }
+    }
+    .wax-monogram {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #FFFFFF 0%, #FCE8B3 40%, #D4AF37 80%, #997A15 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.65));
+      letter-spacing: 0.05em;
+    }
+
+    /* Container */
+    main {
+      position: relative;
+      z-index: 2;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 40px 16px 80px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 16px 56px;
+      border-radius: 24px;
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--card-shadow);
+      margin-bottom: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(135deg, #7A192B 0%, #D4AF37 50%, #4D0E19 100%);
+    }
+
+    .verse-card {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      padding: 16px 20px;
+      background: rgba(255, 245, 247, 0.7);
+      border-radius: 16px;
+      border: 1px solid rgba(220, 155, 140, 0.35);
+    }
+    .verse-text {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.2rem, 3.2vw, 1.48rem);
+      line-height: 1.5;
+      color: var(--burgundy-rich);
+      margin-bottom: 6px;
+    }
+    .verse-ref {
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--rose-gold-rich);
+    }
+
+    .ornament-flourish {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 22px auto;
+      color: var(--gold-metallic);
+      font-size: 1.3rem;
+    }
+    .ornament-flourish::before,
+    .ornament-flourish::after {
+      content: '';
+      height: 1px;
+      width: 75px;
+      background: linear-gradient(90deg, transparent, var(--gold-metallic), transparent);
+    }
+
+    .parents-intro {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin: 0 auto 16px;
+      line-height: 1.6;
+    }
+    .parents-block {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 2.7vw, 1.35rem);
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .parents-separator {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--gold-metallic);
+      font-weight: 400;
+      display: inline-block;
+      margin: 2px 0;
+    }
+
+    .couple-title-wrapper {
+      margin: 30px 0 20px;
+    }
+    .couple-first-name {
+      font-family: var(--font-romantic);
+      font-style: italic;
+      font-size: clamp(3.2rem, 9.5vw, 5.2rem);
+      font-weight: 500;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #7A192B 0%, #B84762 50%, #4D0E19 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      letter-spacing: 0.02em;
+      filter: drop-shadow(0 2px 8px rgba(122, 25, 43, 0.2));
+    }
+    .couple-script-amp {
+      font-family: var(--font-romantic);
+      font-style: italic;
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      color: var(--gold-metallic);
+      margin: -6px 0;
+      display: block;
+      filter: drop-shadow(0 2px 6px rgba(212, 175, 55, 0.4));
+    }
+    .invitation-body-text {
+      font-size: clamp(0.96rem, 2.2vw, 1.08rem);
+      color: var(--text-sub);
+      max-width: 560px;
+      margin: 18px auto 0;
+      line-height: 1.7;
+    }
+
+    /* Section Headers */
+    .section-head {
+      text-align: center;
+      margin: 50px 0 34px;
+    }
+    .section-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--burgundy-rich);
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+    .section-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 2.9rem);
+      font-weight: 600;
+      color: var(--burgundy-deep);
+      letter-spacing: -0.01em;
+    }
+    .section-subtext {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 8px auto 0;
+    }
+
+    /* Base Event Card */
+    .event-card {
+      border-radius: 24px;
+      padding: 36px 28px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .event-card:hover {
+      transform: translateY(-3px);
+    }
+    .event-card.reverse .event-art {
+      order: 2;
+    }
+    .event-card.reverse .event-info {
+      order: 1;
+    }
+
+    /* ===================================================
+       THEME 1: ENGAGEMENT — Soft Dreamy Pastels
+       =================================================== */
+    .event-card-pastel {
+      background: var(--pastel-bg);
+      backdrop-filter: blur(14px);
+      border: 1.5px solid var(--pastel-border);
+      box-shadow: 0 16px 40px -10px rgba(224, 160, 175, 0.25), 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+    .event-card-pastel .event-art {
+      background: radial-gradient(circle at center, rgba(255, 240, 243, 0.85) 0%, rgba(247, 252, 250, 0.5) 80%);
+      border: 1px solid rgba(230, 192, 200, 0.5);
+      box-shadow: inset 0 0 24px rgba(255, 225, 232, 0.5);
+    }
+    .pastel-pill {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--pastel-pill-text);
+      background: var(--pastel-pill-bg);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 10px rgba(216, 130, 150, 0.2);
+    }
+    .pastel-theme-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #6C3949;
+      background: rgba(255, 232, 238, 0.7);
+      border: 1px solid rgba(225, 170, 185, 0.5);
+      padding: 5px 13px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+    }
+    .event-card-pastel .countdown-box {
+      background: linear-gradient(135deg, rgba(255, 250, 252, 0.95), rgba(255, 242, 246, 0.95));
+      border: 1px solid rgba(235, 185, 198, 0.5);
+    }
+
+    /* ===================================================
+       THEME 2: WEDDING — Opposite of Pastels: Deep Rich Jewel Tones
+       =================================================== */
+    .event-card-dark {
+      background: var(--dark-card-bg);
+      backdrop-filter: blur(16px);
+      border: 1.5px solid var(--dark-card-border);
+      box-shadow: var(--dark-card-shadow);
+      color: var(--dark-text-main);
+    }
+    .event-card-dark::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, #FBF0B9 0%, #D4AF37 50%, #997A15 100%);
+    }
+    .event-card-dark .event-art {
+      background: radial-gradient(circle at center, rgba(58, 16, 32, 0.9) 0%, rgba(20, 5, 13, 0.85) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+    .jewel-pill {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--dark-pill-text);
+      background: var(--dark-pill-bg);
+      padding: 5px 15px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+    }
+    .jewel-theme-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #F8D98C;
+      background: rgba(212, 175, 55, 0.14);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+    }
+    .event-card-dark .event-title-date {
+      color: #FFF0F4;
+    }
+    .event-card-dark .event-timestamp {
+      color: #F9D079;
+    }
+    .event-card-dark .event-quote-callout {
+      color: var(--dark-text-sub);
+      border-left-color: var(--gold-metallic);
+    }
+    .event-card-dark .venue-title {
+      color: #FFFFFF;
+    }
+    .event-card-dark .venue-subtitle {
+      color: var(--dark-text-muted);
+    }
+    .event-card-dark .reception-tag {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: rgba(212, 175, 55, 0.45);
+      color: #FBE5B5;
+    }
+    .event-card-dark .countdown-box {
+      background: var(--dark-box-bg);
+      border-color: var(--dark-box-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .event-card-dark .countdown-header {
+      color: #F8D37E;
+    }
+    .event-card-dark .timer-tile {
+      background: var(--dark-tile-bg);
+      border-color: rgba(212, 175, 55, 0.35);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .event-card-dark .timer-num {
+      color: #FFF4F7;
+    }
+    .event-card-dark .timer-lbl {
+      color: #D4AF37;
+    }
+    .event-card-dark .btn-action {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFF0F4;
+      border-color: rgba(212, 175, 55, 0.55);
+    }
+    .event-card-dark .btn-action:hover {
+      background: var(--dark-btn-bg);
+      color: var(--dark-btn-text);
+      border-color: transparent;
+      box-shadow: 0 8px 22px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Event Artwork Container */
+    .event-art {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      border-radius: 18px;
+    }
+    .church-svg {
+      width: 100%;
+      max-width: 330px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      filter: drop-shadow(0 4px 12px rgba(107, 23, 36, 0.08));
+    }
+
+    /* Event Details */
+    .event-title-date {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--burgundy-deep);
+      line-height: 1.18;
+    }
+    .event-timestamp {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--burgundy-rich);
+      margin-top: 4px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .event-quote-callout {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.14rem;
+      color: var(--text-sub);
+      border-left: 3px solid var(--rose-gold-mid);
+      padding-left: 14px;
+      margin: 12px 0 16px;
+      line-height: 1.5;
+    }
+    .venue-title {
+      font-family: var(--font-display);
+      font-size: 1.32rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+    .venue-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      margin-bottom: 16px;
+    }
+    .reception-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--burgundy-rich);
+      background: rgba(255, 235, 240, 0.8);
+      border: 1px solid rgba(220, 155, 140, 0.4);
+      padding: 7px 16px;
+      border-radius: 9999px;
+      margin-bottom: 20px;
+    }
+
+    /* Dynamic Countdown Timer Module */
+    .countdown-box {
+      margin: 18px 0 24px;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(107, 23, 36, 0.06);
+    }
+    .countdown-header {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rose-gold-rich);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .countdown-units {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+    .timer-tile {
+      background: #FFFFFF;
+      border: 1px solid rgba(220, 155, 140, 0.4);
+      border-radius: 12px;
+      padding: 8px 4px;
+      box-shadow: 0 4px 10px rgba(107, 23, 36, 0.05);
+      position: relative;
+    }
+    .timer-num {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+      font-weight: 700;
+      color: var(--burgundy-deep);
+      line-height: 1;
+      display: block;
+    }
+    .timer-lbl {
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rose-gold-rich);
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Buttons & Interactive Links */
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-action {
+      flex: 1 1 auto;
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--burgundy-rich);
+      border: 1.5px solid var(--rose-gold-rich);
+      background: #FFFFFF;
+      border-radius: 12px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    }
+    .btn-action:hover, .btn-action:active {
+      background: var(--grad-btn);
+      color: #FFFFFF;
+      border-color: transparent;
+      box-shadow: 0 8px 18px rgba(107, 23, 36, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* Wishes Section */
+    .wishes-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .wish-box {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+      position: relative;
+    }
+    .wish-source {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--burgundy-rich);
+      background: rgba(255, 230, 236, 0.8);
+      border: 1px solid rgba(220, 155, 140, 0.4);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .wish-authors {
+      font-family: var(--font-romantic); /* UsesAlex Brush / MonteCarlo script */
+      font-style: italic;              /* Keeps the stylish italic slant */
+      font-size: 2.1rem;               /* Slightly adjusted size for script elegance */
+      font-weight: 600;
+      color: var(--burgundy-deep);
+      margin-bottom: 12px;
+    }
+    .wish-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-sub);
+      line-height: 1.65;
+    }
+
+    /* ===================================================
+       CONCISE & COMPACT FOOTER RSVP
+       =================================================== */
+    .footer-rsvp {
+      text-align: center;
+      padding: 24px 20px 20px;
+      margin-top: 36px;
+      border-radius: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--card-shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .footer-rsvp::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(135deg, #FBF0B9 0%, #D4AF37 50%, #997A15 100%);
+    }
+    .footer-headline {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--burgundy-deep);
+      margin-bottom: 6px;
+    }
+    .footer-text {
+      color: var(--text-sub);
+      max-width: 440px;
+      margin: 0 auto 12px;
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+    .btn-rsvp-primary {
+      display: inline-block;
+      min-height: 38px;
+      padding: 8px 28px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFFFFF;
+      background: var(--grad-btn);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      border-radius: 9999px;
+      box-shadow: 0 6px 16px rgba(77, 14, 25, 0.28);
+      margin-bottom: 12px;
+      transition: all 0.25s ease;
+    }
+    .btn-rsvp-primary:hover, .btn-rsvp-primary:active {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 22px rgba(77, 14, 25, 0.38);
+    }
+    .hashtag-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--rose-gold-rich);
+    }
+
+    /* Mobile First Responsive Tweaks */
+    @media (max-width: 820px) {
+      main {
+        padding: 24px 12px 60px;
+      }
+      .page-frame {
+        inset: 6px;
+        border-radius: 8px;
+      }
+      .event-card {
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+        gap: 24px;
+      }
+      .event-card.reverse .event-art {
+        order: 1;
+      }
+      .event-card.reverse .event-info {
+        order: 2;
+      }
+      .event-info {
+        text-align: center;
+      }
+      .event-quote-callout {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(220, 155, 140, 0.4);
+        border-bottom: 1px solid rgba(220, 155, 140, 0.4);
+        padding: 10px 0;
+      }
+      .event-card-dark .event-quote-callout {
+        border-top-color: rgba(212, 175, 55, 0.35);
+        border-bottom-color: rgba(212, 175, 55, 0.35);
+      }
+      .event-timestamp {
+        justify-content: center;
+      }
+      .countdown-header {
+        justify-content: center;
+      }
+      .wishes-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .envelope-card {
+        padding: 34px 18px;
+      }
+      .wax-seal-body {
+        width: 100px;
+        height: 100px;
+      }
+      .audio-btn {
+        bottom: 16px;
+        right: 16px;
+        padding: 8px 14px;
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Shimmering Starfield / Gold Sparkles Canvas -->
+  <canvas id="sparkleCanvas"></canvas>
+
+  <!-- Dual Framing Layer -->
+  <div class="page-frame" aria-hidden="true"></div>
+
+  <!-- Music Sound Toggle Control -->
+  <button id="audioToggle" class="audio-btn" aria-label="Toggle Romantic Background Music">
+    <span class="audio-dot off" id="audioDot"></span>
+    <span id="audioLabel">Music: Off</span>
+  </button>
+
+  <!-- Interactive Burgundy & Gold Wax-Sealed Opening Envelope Overlay -->
+  <div id="envelopeOverlay" class="envelope-overlay">
+    <div class="envelope-card">
+      <p class="envelope-eyebrow">Together with their Families</p>
+      <h1 class="envelope-names">Aleena <em>&amp;</em> Richard</h1>
+      <p style="font-size:0.88rem;color:var(--text-sub);margin-bottom:20px;letter-spacing:0.04em;">Invite you to share in the joy of their Betrothal &amp; Holy Matrimony</p>
+      
+      <button id="openInviteBtn" class="wax-seal-btn" aria-label="Open Invitation">
+        <div class="wax-seal-body">
+          <span class="wax-monogram">A &amp; R</span>
+        </div>
+      </button>
+
+      <p style="font-size:0.75rem;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:var(--rose-gold-rich);">
+        Tap Wax Seal to Open
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero / Spiritual Quote & Parental Blessing -->
+    <section class="hero">
+      <div class="verse-card">
+        <p class="verse-text">“So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.”</p>
+        <p class="verse-ref">Matthew 19:6</p>
+      </div>
+
+      <div class="ornament-flourish">✦ ❦ ✦</div>
+
+      <p class="parents-intro">With grateful hearts and the blessings of God Almighty and our beloved parents</p>
+      
+      <div class="parents-block">
+        Mr. Johney Chacko &amp; Mrs. Ancy Johney<br>
+        <span style="font-size: 0.98rem; font-weight: 500; color: var(--rose-gold-rich); letter-spacing: 0.04em;">Vathalloor (H), Karimannoor</span><br>
+        <span class="parents-separator">&amp;</span><br>
+        Mr. Johnson Joseph &amp; Mrs. Deepa Johnson<br>
+        <span style="font-size: 0.98rem; font-weight: 500; color: var(--rose-gold-rich); letter-spacing: 0.04em;">Thazhathoot (H), Ezhumuttom</span>
+      </div>
+
+      <div class="couple-title-wrapper">
+        <span class="couple-first-name">Aleena Johney</span>
+        <span class="couple-script-amp">&amp;</span>
+        <span class="couple-first-name">Richard Johnson</span>
+      </div>
+
+      <p class="invitation-body-text">
+        request the honor of your presence and prayers as we celebrate our solemn <strong>Betrothal</strong> and exchange our sacred vows in <strong>Holy Matrimony</strong>.
+      </p>
+    </section>
+
+    <!-- The Celebrations Section -->
+    <section>
+      <div class="section-head">
+        <span class="section-badge">Two Sacred Chapters</span>
+        <h2 class="section-headline">The Celebrations</h2>
+        <p class="section-subtext">Join us as we step forward into love, prayer, and joyous fellowship.</p>
+      </div>
+
+      <!-- Event 1: The Engagement (Soft Airy Pastels Theme) -->
+      <article class="event-card event-card-pastel">
+        <div class="event-art">
+          <!-- Karimannoor Church SVG (Artwork only - church title text removed from image) -->
+          <svg viewBox="0 0 360 280" fill="none" class="church-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of Church Architecture">
+            <circle cx="180" cy="135" r="112" stroke="#E2A6B4" stroke-width="0.9" stroke-dasharray="3 4" opacity="0.55"/>
+            <!-- Top Cross -->
+            <line x1="180" y1="14" x2="180" y2="30" stroke="#B85D77" stroke-width="2" stroke-linecap="round"/>
+            <line x1="173" y1="21" x2="187" y2="21" stroke="#B85D77" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="180" cy="14" r="2.2" fill="#E5A93C"/>
+            <circle cx="173" cy="21" r="1.6" fill="#E5A93C"/>
+            <circle cx="187" cy="21" r="1.6" fill="#E5A93C"/>
+            <path d="M174 30 Q180 26 186 30" stroke="#DCA2AF" stroke-width="1.3"/>
+
+            <!-- Tier 1: Belfry Arch -->
+            <path d="M148 82 V56 C148 36 212 36 212 56 V82" stroke="#B85D77" stroke-width="1.8"/>
+            <path d="M153 82 V57 C153 41 207 41 207 57 V82" stroke="#DCA2AF" stroke-width="1.1" opacity="0.8"/>
+            <line x1="180" y1="42" x2="180" y2="82" stroke="#DCA2AF" stroke-width="1" opacity="0.6"/>
+            <line x1="158" y1="58" x2="202" y2="58" stroke="#DCA2AF" stroke-width="1" opacity="0.6"/>
+            <circle cx="180" cy="64" r="7" stroke="#E5A93C" stroke-width="1.5" fill="#E5A93C" fill-opacity="0.25"/>
+            <rect x="142" y="54" width="6" height="28" stroke="#B85D77" stroke-width="1.3"/>
+            <rect x="212" y="54" width="6" height="28" stroke="#B85D77" stroke-width="1.3"/>
+            <line x1="136" y1="82" x2="224" y2="82" stroke="#B85D77" stroke-width="1.8"/>
+
+            <!-- Tier 2: Stepped Facade -->
+            <rect x="138" y="82" width="84" height="44" stroke="#B85D77" stroke-width="1.6"/>
+            <path d="M138 88 Q122 92 118 112 L118 126" stroke="#B85D77" stroke-width="1.5"/>
+            <path d="M222 88 Q238 92 242 112 L242 126" stroke="#B85D77" stroke-width="1.5"/>
+            <!-- Marian Niche -->
+            <rect x="167" y="88" width="26" height="34" stroke="#DCA2AF" stroke-width="1.3"/>
+            <path d="M170 122 V98 C170 91 190 91 190 98 V122" stroke="#B85D77" stroke-width="1.4"/>
+            <circle cx="180" cy="99" r="2.5" stroke="#DCA2AF" stroke-width="1.2"/>
+            <path d="M176 118 L178 103 H182 L184 118" stroke="#DCA2AF" stroke-width="1.2"/>
+            <path d="M145 126 V104 C145 98 159 98 159 104 V126" stroke="#DCA2AF" stroke-width="1" opacity="0.75"/>
+            <path d="M201 126 V104 C201 98 215 98 215 104 V126" stroke="#DCA2AF" stroke-width="1" opacity="0.75"/>
+            <path d="M114 96 L118 86 L122 96 M112 89 Q118 84 124 89" stroke="#E5A93C" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M238 96 L242 86 L246 96 M236 89 Q242 84 248 89" stroke="#E5A93C" stroke-width="1.3" stroke-linecap="round"/>
+            <line x1="108" y1="126" x2="252" y2="126" stroke="#B85D77" stroke-width="1.8"/>
+
+            <!-- Tier 3: Main Facade -->
+            <rect x="104" y="126" width="152" height="54" stroke="#B85D77" stroke-width="1.6"/>
+            <path d="M104 132 Q88 138 84 158 V180" stroke="#B85D77" stroke-width="1.5"/>
+            <path d="M256 132 Q272 138 276 158 V180" stroke="#B85D77" stroke-width="1.5"/>
+            <rect x="64" y="166" width="38" height="14" stroke="#B85D77" stroke-width="1.3"/>
+            <line x1="72" y1="166" x2="72" y2="180" stroke="#DCA2AF" stroke-width="1.1"/>
+            <line x1="80" y1="166" x2="80" y2="180" stroke="#DCA2AF" stroke-width="1.1"/>
+            <line x1="88" y1="166" x2="88" y2="180" stroke="#DCA2AF" stroke-width="1.1"/>
+            <rect x="258" y="166" width="38" height="14" stroke="#B85D77" stroke-width="1.3"/>
+            <line x1="272" y1="166" x2="272" y2="180" stroke="#DCA2AF" stroke-width="1.1"/>
+            <line x1="280" y1="166" x2="280" y2="180" stroke="#DCA2AF" stroke-width="1.1"/>
+            <line x1="288" y1="166" x2="288" y2="180" stroke="#DCA2AF" stroke-width="1.1"/>
+            <!-- Center Grand Arch -->
+            <path d="M146 174 V152 C146 130 214 130 214 152 V174" stroke="#DCA2AF" stroke-width="1.5"/>
+            <path d="M168 174 V147 C168 138 192 138 192 147 V174" stroke="#B85D77" stroke-width="1.5"/>
+            <circle cx="180" cy="148" r="2.8" stroke="#DCA2AF" stroke-width="1.3"/>
+            <path d="M174 169 L177 152 H183 L186 169 M173 156 H187" stroke="#DCA2AF" stroke-width="1.3" stroke-linecap="round"/>
+            <rect x="114" y="144" width="18" height="26" stroke="#DCA2AF" stroke-width="1.2"/>
+            <circle cx="123" cy="151" r="2.2" stroke="#DCA2AF" stroke-width="1"/>
+            <path d="M119 167 L121 155 H125 L127 167" stroke="#DCA2AF" stroke-width="1"/>
+            <rect x="228" y="144" width="18" height="26" stroke="#DCA2AF" stroke-width="1.2"/>
+            <circle cx="237" cy="151" r="2.2" stroke="#DCA2AF" stroke-width="1"/>
+            <path d="M233 167 L235 155 H239 L241 167" stroke="#DCA2AF" stroke-width="1"/>
+
+            <!-- Tier 4: Portico -->
+            <path d="M124 180 L180 168 L236 180" stroke="#B85D77" stroke-width="1.8"/>
+            <rect x="44" y="180" width="272" height="8" stroke="#B85D77" stroke-width="1.6"/>
+            <path d="M138 198 Q152 188 166 196 Q180 186 194 196 Q208 188 222 198" stroke="#DCA2AF" stroke-width="1.5"/>
+            <rect x="68" y="188" width="10" height="54" stroke="#B85D77" stroke-width="1.5"/>
+            <rect x="64" y="242" width="18" height="5" stroke="#B85D77" stroke-width="1.4"/>
+            <rect x="130" y="188" width="10" height="54" stroke="#B85D77" stroke-width="1.5"/>
+            <rect x="126" y="242" width="18" height="5" stroke="#B85D77" stroke-width="1.4"/>
+            <rect x="220" y="188" width="10" height="54" stroke="#B85D77" stroke-width="1.5"/>
+            <rect x="216" y="242" width="18" height="5" stroke="#B85D77" stroke-width="1.4"/>
+            <rect x="282" y="188" width="10" height="54" stroke="#B85D77" stroke-width="1.5"/>
+            <rect x="278" y="242" width="18" height="5" stroke="#B85D77" stroke-width="1.4"/>
+            <!-- Doors -->
+            <path d="M162 242 V210 C162 198 198 198 198 210 V242" stroke="#B85D77" stroke-width="1.7"/>
+            <line x1="180" y1="201" x2="180" y2="242" stroke="#DCA2AF" stroke-width="1.3"/>
+            <rect x="96" y="210" width="22" height="32" stroke="#B85D77" stroke-width="1.4"/>
+            <rect x="242" y="210" width="22" height="32" stroke="#B85D77" stroke-width="1.4"/>
+            <line x1="36" y1="247" x2="324" y2="247" stroke="#B85D77" stroke-width="1.7"/>
+            <line x1="26" y1="253" x2="334" y2="253" stroke="#DCA2AF" stroke-width="1.4"/>
+            <line x1="16" y1="259" x2="344" y2="259" stroke="#B85D77" stroke-width="1.6"/>
+          </svg>
+        </div>
+
+        <div class="event-info">
+          <span class="pastel-pill">The Betrothal</span>
+          <div class="pastel-theme-badge">
+            <span>🌸</span> Attire / Theme: Soft Pastels
+          </div>
+
+          <h3 class="event-title-date">Thursday, Jan 07, 2027</h3>
+          <p class="event-timestamp">
+            <span>⏰</span> 12:00 PM IST onwards
+          </p>
+
+          <blockquote class="event-quote-callout">
+            “Two souls, one promise — where two families meet in laughter and grace.”
+          </blockquote>
+
+          <h4 class="venue-title">St. Mary's Syro-Malabar Forane Church</h4>
+          <p class="venue-subtitle">Karimannoor, Idukki District, Kerala</p>
+
+          <div class="reception-tag">
+            <span>✨</span> Followed by Reception at Parish Hall
+          </div>
+
+          <!-- Dynamic Engagement Countdown -->
+          <div class="countdown-box">
+            <div class="countdown-header">
+              <span>⏳</span> Countdown to The Betrothal
+            </div>
+            <div class="countdown-units" id="timerEngagement">
+              <div class="timer-tile">
+                <span class="timer-num" id="engDays">00</span>
+                <span class="timer-lbl">Days</span>
+              </div>
+              <div class="timer-tile">
+                <span class="timer-num" id="engHours">00</span>
+                <span class="timer-lbl">Hours</span>
+              </div>
+              <div class="timer-tile">
+                <span class="timer-num" id="engMinutes">00</span>
+                <span class="timer-lbl">Mins</span>
+              </div>
+              <div class="timer-tile">
+                <span class="timer-num" id="engSeconds">00</span>
+                <span class="timer-lbl">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <a href="https://maps.google.com/?q=St.+Mary's+Syro-Malabar+Forane+Church+Karimannoor" target="_blank" rel="noopener noreferrer" class="btn-action">
+              <span>📍</span> Google Maps
+            </a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aleena+%26+Richard+%E2%80%94+Betrothal+Ceremony&dates=20270107T120000/20270107T160000&location=St.+Mary's+Syro-Malabar+Forane+Church,+Karimannoor,+Kerala&details=Solemn+Betrothal+Ceremony+followed+by+Reception+at+Parish+Hall&ctz=Asia/Kolkata" target="_blank" rel="noopener noreferrer" class="btn-action">
+              <span>🗓️</span> Add to Calendar
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Event 2: The Wedding Ceremony (Opposite of Pastels: Deep Rich Jewel Tones Theme) -->
+      <article class="event-card event-card-dark reverse">
+        <div class="event-art">
+          <!-- Thodupuzha Church SVG (Artwork only - church title text removed from image) -->
+          <svg viewBox="0 0 360 280" fill="none" class="church-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of Church Architecture">
+            <circle cx="185" cy="132" r="110" stroke="#D4AF37" stroke-width="0.9" stroke-dasharray="3 4" opacity="0.4"/>
+            <!-- Kodimaram / Flagstaff -->
+            <line x1="42" y1="68" x2="46" y2="215" stroke="#D4AF37" stroke-width="2.2"/>
+            <circle cx="42" cy="64" r="4.6" stroke="#D4AF37" stroke-width="1.5" fill="#FFF5D9"/>
+            <line x1="42" y1="54" x2="42" y2="60" stroke="#D4AF37" stroke-width="1.5"/>
+            <line x1="38" y1="78" x2="54" y2="83" stroke="#D4AF37" stroke-width="1.2"/>
+
+            <!-- High Gable Peak -->
+            <path d="M135 88 L185 32 L235 88" stroke="#D4AF37" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M142 88 L185 40 L228 88" stroke="#DE6D55" stroke-width="1.2"/>
+            <path d="M164 84 Q185 52 206 84 Z" stroke="#D4AF37" stroke-width="1.4"/>
+            <line x1="185" y1="56" x2="185" y2="78" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="178" y1="65" x2="192" y2="65" stroke="#DE6D55" stroke-width="1.6"/>
+
+            <!-- Cascading Multi-gables -->
+            <path d="M98 118 L132 66 L158 106" stroke="#D4AF37" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M272 118 L238 66 L212 106" stroke="#D4AF37" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M74 144 L106 94 L136 136" stroke="#DE6D55" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M296 144 L264 94 L234 136" stroke="#DE6D55" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M58 166 L86 122 L114 162" stroke="#D4AF37" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M312 166 L284 122 L256 162" stroke="#D4AF37" stroke-width="1.5" stroke-linejoin="round"/>
+
+            <!-- Central Niche & Christ Statue -->
+            <path d="M138 134 L185 68 L232 134" stroke="#D4AF37" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M145 134 L185 77 L225 134" stroke="#DE6D55" stroke-width="1.2"/>
+            <path d="M162 152 V122 Q185 92 208 122 V152" stroke="#D4AF37" stroke-width="1.6"/>
+            <circle cx="185" cy="116" r="3" stroke="#D4AF37" stroke-width="1.4"/>
+            <path d="M175 123 H195 M180 144 L182 121 H188 L190 144" stroke="#D4AF37" stroke-width="1.4" stroke-linecap="round"/>
+            <rect x="177" y="144" width="16" height="8" stroke="#D4AF37" stroke-width="1.3"/>
+
+            <!-- Balcony -->
+            <rect x="150" y="128" width="10" height="30" stroke="#DE6D55" stroke-width="1.4"/>
+            <rect x="210" y="128" width="10" height="30" stroke="#DE6D55" stroke-width="1.4"/>
+            <rect x="146" y="156" width="78" height="8" stroke="#D4AF37" stroke-width="1.5"/>
+
+            <!-- Pillars -->
+            <line x1="72" y1="164" x2="298" y2="164" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="82" y1="164" x2="82" y2="206" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="104" y1="164" x2="104" y2="206" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="128" y1="164" x2="128" y2="206" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="152" y1="164" x2="152" y2="204" stroke="#D4AF37" stroke-width="1.8"/>
+            <line x1="218" y1="164" x2="218" y2="204" stroke="#D4AF37" stroke-width="1.8"/>
+            <line x1="242" y1="164" x2="242" y2="206" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="266" y1="164" x2="266" y2="206" stroke="#DE6D55" stroke-width="1.6"/>
+            <line x1="288" y1="164" x2="288" y2="206" stroke="#DE6D55" stroke-width="1.6"/>
+
+            <!-- Sweeping Twin Staircases -->
+            <path d="M132 212 Q185 202 238 212" stroke="#D4AF37" stroke-width="1.8"/>
+            <path d="M132 220 Q185 210 238 220" stroke="#DE6D55" stroke-width="1.3"/>
+            <line x1="185" y1="184" x2="185" y2="214" stroke="#D4AF37" stroke-width="2.2"/>
+            <line x1="175" y1="195" x2="195" y2="195" stroke="#D4AF37" stroke-width="2.2"/>
+            <path d="M177 207 Q185 202 193 207" stroke="#D4AF37" stroke-width="1.6"/>
+            <rect x="180" y="218" width="10" height="32" stroke="#D4AF37" stroke-width="1.6" fill="#D4AF37" fill-opacity="0.25"/>
+
+            <path d="M132 212 L68 248" stroke="#DE6D55" stroke-width="1.8"/>
+            <path d="M136 220 L82 252" stroke="#D4AF37" stroke-width="1.3"/>
+            <path d="M238 212 L302 248" stroke="#DE6D55" stroke-width="1.8"/>
+            <path d="M234 220 L288 252" stroke="#D4AF37" stroke-width="1.3"/>
+            <line x1="24" y1="215" x2="132" y2="215" stroke="#D4AF37" stroke-width="1.5"/>
+            <line x1="238" y1="215" x2="346" y2="215" stroke="#D4AF37" stroke-width="1.5"/>
+            <line x1="54" y1="252" x2="316" y2="252" stroke="#DE6D55" stroke-width="1.7"/>
+          </svg>
+        </div>
+
+        <div class="event-info">
+          <span class="jewel-pill">The Wedding</span>
+          <div class="jewel-theme-badge">
+            <span>✨</span> Attire / Theme: Deep Jewel Tones
+          </div>
+
+          <h3 class="event-title-date">Sunday, Jan 17, 2027</h3>
+          <p class="event-timestamp">
+            <span>⏰</span> 12:00 PM IST
+          </p>
+
+          <blockquote class="event-quote-callout">
+            “Hand in hand, we step into forever surrounded by those we love most.”
+          </blockquote>
+
+          <h4 class="venue-title">St. Sebastian's Syro-Malabar Forane Church</h4>
+          <p class="venue-subtitle">Thodupuzha, Idukki District, Kerala</p>
+
+          <div class="reception-tag">
+            <span>✨</span> Followed by Reception at Parish Hall
+          </div>
+
+          <!-- Dynamic Wedding Countdown -->
+          <div class="countdown-box">
+            <div class="countdown-header">
+              <span>💒</span> Countdown to The Wedding
+            </div>
+            <div class="countdown-units" id="timerWedding">
+              <div class="timer-tile">
+                <span class="timer-num" id="wedDays">00</span>
+                <span class="timer-lbl">Days</span>
+              </div>
+              <div class="timer-tile">
+                <span class="timer-num" id="wedHours">00</span>
+                <span class="timer-lbl">Hours</span>
+              </div>
+              <div class="timer-tile">
+                <span class="timer-num" id="wedMinutes">00</span>
+                <span class="timer-lbl">Mins</span>
+              </div>
+              <div class="timer-tile">
+                <span class="timer-num" id="wedSeconds">00</span>
+                <span class="timer-lbl">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <a href="https://maps.google.com/?q=St.+Sebastian's+Syro+Malabar+Forane+Church+Thodupuzha" target="_blank" rel="noopener noreferrer" class="btn-action">
+              <span>📍</span> Google Maps
+            </a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aleena+%26+Richard+%E2%80%94+Wedding+Ceremony&dates=20270117T120000/20270117T160000&location=St.+Sebastian's+Syro-Malabar+Forane+Church,+Thodupuzha,+Kerala&details=Holy+Matrimony+Celebration+followed+by+Reception+at+Parish+Hall&ctz=Asia/Kolkata" target="_blank" rel="noopener noreferrer" class="btn-action">
+              <span>🗓️</span> Add to Calendar
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Warm Wishes from Siblings Section -->
+    <section>
+      <div class="section-head">
+        <span class="section-badge">Family Love &amp; Blessings</span>
+        <h2 class="section-headline">With Warmest Compliments</h2>
+        <p class="section-subtext">Sharing every step, memory, and joyous celebration as two loving homes become one.</p>
+      </div>
+
+      <div class="wishes-container">
+        <div class="wish-box">
+          <span class="wish-source">From the Bride's Siblings</span>
+          <h3 class="wish-authors">Aleenta &amp; Aneena</h3>
+          <p class="wish-quote">
+            “Watching you find forever is our greatest happiness. Welcome home, <em>Richard</em> — here’s to a lifetime of love and laughter with <em>Aleena</em>!”
+          </p>
+        </div>
+
+        <div class="wish-box">
+          <span class="wish-source">From the Groom's Siblings</span>
+          <h3 class="wish-authors">Henrych, Hariet &amp; Jaculin</h3>
+          <p class="wish-quote">
+            “To our dearest brother <em>Richard</em> and lovely new sister <em>Aleena</em> — may your home always be overflowing with warmth, peace, and endless joy!”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Refined Concise Footer RSVP -->
+    <footer class="footer-rsvp">
+      <h2 class="footer-headline">Reserve Your Presence</h2>
+      <p class="footer-text">
+        Your presence and prayers will make our celebrations truly blessed.
+      </p>
+
+      <a href="https://forms.gle/Djea2waiSEPRXGgV7" target="_blank" rel="noopener noreferrer" class="btn-rsvp-primary">
+        RSVP Now
+      </a>
+
+      <p class="hashtag-tag">Aleena &amp; Richard • January 2027</p>
+    </footer>
+  </main>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    /* ==========================================================================
+       1. Dynamic Countdown Timers for Engagement & Wedding
+       ========================================================================== */
+    const engagementDate = new Date("2027-01-07T12:00:00+05:30").getTime();
+    const weddingDate = new Date("2027-01-17T12:00:00+05:30").getTime();
+
+    function updateTimers() {
+      const now = new Date().getTime();
+
+      // Engagement calculation
+      const engDiff = engagementDate - now;
+      if (engDiff > 0) {
+        const d = Math.floor(engDiff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((engDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((engDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((engDiff % (1000 * 60)) / 1000);
+
+        document.getElementById('engDays').textContent = String(d).padStart(2, '0');
+        document.getElementById('engHours').textContent = String(h).padStart(2, '0');
+        document.getElementById('engMinutes').textContent = String(m).padStart(2, '0');
+        document.getElementById('engSeconds').textContent = String(s).padStart(2, '0');
+      } else {
+        document.getElementById('timerEngagement').innerHTML = '<div style="grid-column:span 4;padding:12px;font-weight:700;color:var(--burgundy-rich);font-size:0.95rem;">Celebrated With Joy!</div>';
+      }
+
+      // Wedding calculation
+      const wedDiff = weddingDate - now;
+      if (wedDiff > 0) {
+        const d = Math.floor(wedDiff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((wedDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((wedDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((wedDiff % (1000 * 60)) / 1000);
+
+        document.getElementById('wedDays').textContent = String(d).padStart(2, '0');
+        document.getElementById('wedHours').textContent = String(h).padStart(2, '0');
+        document.getElementById('wedMinutes').textContent = String(m).padStart(2, '0');
+        document.getElementById('wedSeconds').textContent = String(s).padStart(2, '0');
+      } else {
+        document.getElementById('timerWedding').innerHTML = '<div style="grid-column:span 4;padding:12px;font-weight:700;color:#F8D98C;font-size:0.95rem;">Blessed In Holy Matrimony!</div>';
+      }
+    }
+    setInterval(updateTimers, 1000);
+    updateTimers();
+
+    /* ==========================================================================
+       2. Web Audio API - Exquisitely Romantic, Lush, Continuous Flowing Bridal Symphony
+       Combines sweet concert harp plucks, warm acoustic cello sustain, and gentle shimmer harmonics.
+       ========================================================================== */
+    let audioCtx = null;
+    let isPlaying = false;
+    let musicTimer = null;
+    let melodyIndex = 0;
+    let masterGain = null;
+
+    // Sweet, flowing romantic melody progression (Canon/Bridal Romance in D Major / G Major / B Minor)
+    const romanticBridalScore = [
+      // Phrase 1: Pure Romance & Tenderness
+      { note: 293.66, chord: [146.83, 220.00, 293.66], dur: 0.58 }, // D4, D3/A3/D4
+      { note: 369.99, chord: null,                     dur: 0.32 }, // F#4
+      { note: 440.00, chord: null,                     dur: 0.35 }, // A4
+      { note: 587.33, chord: [220.00, 277.18, 440.00], dur: 0.60 }, // D5, A3/C#4/A4
+      { note: 554.37, chord: null,                     dur: 0.32 }, // C#5
+      { note: 493.88, chord: null,                     dur: 0.36 }, // B4
+      
+      // Phrase 2: Gentle yearning & warmth
+      { note: 440.00, chord: [196.00, 246.94, 392.00], dur: 0.58 }, // A4, G3/B3/G4
+      { note: 392.00, chord: null,                     dur: 0.30 }, // G4
+      { note: 369.99, chord: null,                     dur: 0.34 }, // F#4
+      { note: 329.63, chord: [146.83, 220.00, 369.99], dur: 0.62 }, // E4, D3/A3/F#4
+      { note: 293.66, chord: null,                     dur: 0.42 }, // D4
+
+      // Phrase 3: Rising devotion
+      { note: 369.99, chord: [185.00, 277.18, 369.99], dur: 0.50 }, // F#4, F#3/C#4/F#4
+      { note: 440.00, chord: null,                     dur: 0.32 }, // A4
+      { note: 493.88, chord: [246.94, 293.66, 440.00], dur: 0.55 }, // B4, B3/D4/A4
+      { note: 587.33, chord: null,                     dur: 0.34 }, // D5
+      { note: 659.25, chord: [196.00, 293.66, 392.00], dur: 0.60 }, // E5, G3/D4/G4
+      { note: 739.99, chord: null,                     dur: 0.36 }, // F#5
+      { note: 659.25, chord: [220.00, 277.18, 440.00], dur: 0.50 }, // E5, A3/C#4/A4
+      { note: 587.33, chord: [146.83, 220.00, 293.66], dur: 0.85 }, // D5, D3 full resolution
+
+      // Phrase 4: Delicate poetic conclusion
+      { note: 440.00, chord: [174.61, 261.63, 349.23], dur: 0.52 }, // A4, F3/C4/F4
+      { note: 493.88, chord: null,                     dur: 0.32 }, // B4
+      { note: 554.37, chord: [220.00, 277.18, 440.00], dur: 0.56 }, // C#5, A3/C#4/A4
+      { note: 587.33, chord: null,                     dur: 0.35 }, // D5
+      { note: 493.88, chord: [196.00, 246.94, 392.00], dur: 0.58 }, // B4, G3/B3/G4
+      { note: 440.00, chord: null,                     dur: 0.32 }, // A4
+      { note: 369.99, chord: [146.83, 220.00, 293.66], dur: 0.54 }, // F#4, D3/A3/D4
+      { note: 329.63, chord: null,                     dur: 0.36 }, // E4
+      { note: 293.66, chord: [146.83, 220.00, 293.66, 369.99], dur: 1.10 } // D4 full grand harp arpeggio
+    ];
+
+    function playRomanticHarpNote(freq, volume = 0.045) {
+      if (!audioCtx || !freq) return;
+      try {
+        const now = audioCtx.currentTime;
+
+        // Dual oscillators for warm acoustic body & crystal bell clarity
+        const oscBody = audioCtx.createOscillator();
+        const oscShimmer = audioCtx.createOscillator();
+        const filter = audioCtx.createBiquadFilter();
+        const noteGain = audioCtx.createGain();
+
+        oscBody.type = 'sine';
+        oscBody.frequency.setValueAtTime(freq, now);
+
+        // Soft, glowing overtone (pure harp string sparkle)
+        oscShimmer.type = 'sine';
+        oscShimmer.frequency.setValueAtTime(freq * 2, now);
+
+        // Warm, lush low-pass filter with gentle acoustic decay
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(2600, now);
+        filter.frequency.exponentialRampToValueAtTime(700, now + 2.2);
+
+        noteGain.gain.setValueAtTime(0.0001, now);
+        noteGain.gain.linearRampToValueAtTime(volume, now + 0.025);
+        noteGain.gain.exponentialRampToValueAtTime(0.0001, now + 3.2);
+
+        oscBody.connect(filter);
+        oscShimmer.connect(filter);
+        filter.connect(noteGain);
+        noteGain.connect(masterGain);
+
+        oscBody.start(now);
+        oscShimmer.start(now);
+        oscBody.stop(now + 3.4);
+        oscShimmer.stop(now + 3.4);
+      } catch (e) {
+        console.warn("Harp audio error:", e);
+      }
+    }
+
+    function playCelloSustainChord(frequencies) {
+      if (!audioCtx || !frequencies || !frequencies.length) return;
+      try {
+        const now = audioCtx.currentTime;
+
+        frequencies.forEach((freq, idx) => {
+          const oscCello = audioCtx.createOscillator();
+          const filterCello = audioCtx.createBiquadFilter();
+          const celloGain = audioCtx.createGain();
+
+          oscCello.type = 'triangle';
+          oscCello.frequency.setValueAtTime(freq, now);
+
+          filterCello.type = 'lowpass';
+          filterCello.frequency.setValueAtTime(450, now);
+
+          // Deep, soothing cinematic swell
+          celloGain.gain.setValueAtTime(0.0001, now);
+          celloGain.gain.linearRampToValueAtTime(0.022 / frequencies.length, now + 0.15 + (idx * 0.04));
+          celloGain.gain.exponentialRampToValueAtTime(0.0001, now + 3.8);
+
+          oscCello.connect(filterCello);
+          filterCello.connect(celloGain);
+          celloGain.connect(masterGain);
+
+          oscCello.start(now + (idx * 0.03));
+          oscCello.stop(now + 4.0);
+        });
+      } catch (e) {
+        console.warn("Cello chord error:", e);
+      }
+    }
+
+    function stepFlowingMelody() {
+      if (!isPlaying || !audioCtx) return;
+      const step = romanticBridalScore[melodyIndex % romanticBridalScore.length];
+
+      // Play melody note
+      playRomanticHarpNote(step.note, 0.05);
+
+      // Play warm cello harmony chords if present
+      if (step.chord) {
+        playCelloSustainChord(step.chord);
+      }
+
+      melodyIndex = (melodyIndex + 1) % romanticBridalScore.length;
+      const nextDelayMs = Math.floor(step.dur * 1000);
+      musicTimer = setTimeout(stepFlowingMelody, nextDelayMs);
+    }
+
+    function startCelebrationAudio() {
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          masterGain = audioCtx.createGain();
+          masterGain.gain.setValueAtTime(0.85, audioCtx.currentTime);
+          masterGain.connect(audioCtx.destination);
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        isPlaying = true;
+        document.getElementById('audioLabel').textContent = 'Music: Playing';
+        document.getElementById('audioDot').classList.remove('off');
+
+        clearTimeout(musicTimer);
+        stepFlowingMelody();
+      } catch (err) {
+        console.warn("AudioContext error", err);
+      }
+    }
+
+    function stopCelebrationAudio() {
+      isPlaying = false;
+      clearTimeout(musicTimer);
+      document.getElementById('audioLabel').textContent = 'Music: Off';
+      document.getElementById('audioDot').classList.add('off');
+    }
+
+    document.getElementById('openInviteBtn').addEventListener('click', () => {
+      document.getElementById('envelopeOverlay').classList.add('opened');
+      startCelebrationAudio();
+    });
+
+    document.getElementById('audioToggle').addEventListener('click', () => {
+      if (isPlaying) {
+        stopCelebrationAudio();
+      } else {
+        startCelebrationAudio();
+      }
+    });
+
+    /* ==========================================================================
+       3. Gold & Warm Rose Particle Ambient Sparkle Canvas
+       ========================================================================== */
+    const canvas = document.getElementById('sparkleCanvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const colors = [
+      'rgba(212, 175, 55, ',   // Gold
+      'rgba(249, 231, 186, ',  // Pale Gold
+      'rgba(200, 109, 91, ',   // Rose Gold
+      'rgba(240, 140, 160, '   // Blush
+    ];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const count = window.innerWidth < 768 ? 48 : 85;
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2 + 0.5,
+        colorBase: colors[Math.floor(Math.random() * colors.length)],
+        alpha: Math.random(),
+        speed: Math.random() * 0.015 + 0.005,
+        driftY: Math.random() * 0.25 + 0.1
+      }));
+    }
+
+    function renderSparkles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.alpha += p.speed;
+        p.y -= p.driftY;
+        if (p.y < -10) p.y = canvas.height + 10;
+        
+        const opacity = ((Math.sin(p.alpha) + 1) / 2) * 0.65 + 0.15;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.colorBase + opacity + ')';
+        ctx.shadowBlur = 6;
+        ctx.shadowColor = p.colorBase + '0.4)';
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+      requestAnimationFrame(renderSparkles);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    renderSparkles();
+  </script>
+</body>
+</html>
