@@ -10,6 +10,8 @@
 
   <meta name="color-scheme" content="light only" />
 
+  <meta name="supported-color-schemes" content="light only" />
+
   <title>Aleena Johney & Richard Johnson | Betrothal & Wedding Invitation</title>
 
   
@@ -28,7 +30,11 @@
 
     :root {
 
-      color-scheme: light only;
+      color-scheme: light only !important;
+
+      forced-color-adjust: none !important;
+
+      -webkit-forced-color-adjust: none !important;
 
       /* Base Global Palette */
 
@@ -166,6 +172,10 @@
 
       -webkit-tap-highlight-color: transparent;
 
+      forced-color-adjust: none;
+
+      -webkit-forced-color-adjust: none;
+
     }
 
 
@@ -180,6 +190,8 @@
 
       font-family: var(--font-sans);
 
+      color-scheme: light only !important;
+
     }
 
 
@@ -188,17 +200,23 @@
 
       min-height: 100vh;
 
-      background: radial-gradient(circle at 10% 10%, #FFF5F7 0%, transparent 40%),
+      background-color: #FFF9FA !important;
 
-                  radial-gradient(circle at 90% 80%, #FDE4EB 0%, transparent 45%),
+      background-image: radial-gradient(circle at 10% 10%, #FFF5F7 0%, transparent 40%),
 
-                  radial-gradient(circle at 50% 50%, #FFFDFD 0%, #FBEBF0 100%);
+                        radial-gradient(circle at 90% 80%, #FDE4EB 0%, transparent 45%),
+
+                        radial-gradient(circle at 50% 50%, #FFFDFD 0%, #FBEBF0 100%),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFF9FA'/%3E%3C/svg%3E") !important;
 
       position: relative;
 
       overflow-x: hidden;
 
       line-height: 1.6;
+
+      color: var(--text-main) !important;
 
     }
 
@@ -270,13 +288,15 @@
 
       z-index: 70;
 
-      background: rgba(255, 255, 255, 0.94);
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       backdrop-filter: blur(12px);
 
       border: 1.5px solid var(--gold-metallic);
 
-      color: var(--burgundy-rich);
+      color: var(--burgundy-rich) !important;
 
       padding: 10px 18px;
 
@@ -350,7 +370,11 @@
 
       z-index: 100;
 
-      background: radial-gradient(circle at center, #FFF8FA 0%, #F8E3E9 65%, #ECD0D9 100%);
+      background-color: #FFF8FA !important;
+
+      background-image: radial-gradient(circle at center, #FFF8FA 0%, #F8E3E9 65%, #ECD0D9 100%),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFF8FA'/%3E%3C/svg%3E") !important;
 
       display: flex;
 
@@ -396,7 +420,9 @@
 
       border-radius: 20px;
 
-      background: rgba(255, 255, 255, 0.96);
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       border: 1.5px solid rgba(212, 175, 55, 0.5);
 
@@ -594,7 +620,9 @@
 
       border-radius: 24px;
 
-      background: var(--card-bg);
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       backdrop-filter: blur(14px);
 
@@ -638,7 +666,9 @@
 
       padding: 16px 20px;
 
-      background: rgba(255, 245, 247, 0.7);
+      background-color: #FFF5F7 !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFF5F7'/%3E%3C/svg%3E") !important;
 
       border-radius: 16px;
 
@@ -950,7 +980,11 @@
 
     .event-card-pastel {
 
-      background: var(--pastel-bg);
+      background-color: #FFF9FB !important;
+
+      background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 248, 0.92) 50%, rgba(246, 252, 250, 0.9)),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFF9FB'/%3E%3C/svg%3E") !important;
 
       backdrop-filter: blur(14px);
 
@@ -962,7 +996,11 @@
 
     .event-card-pastel .event-art {
 
-      background: radial-gradient(circle at center, rgba(255, 240, 243, 0.85) 0%, rgba(247, 252, 250, 0.5) 80%);
+      background-color: #FFF3F6 !important;
+
+      background-image: radial-gradient(circle at center, rgba(255, 240, 243, 0.85) 0%, rgba(247, 252, 250, 0.5) 80%),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFF3F6'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(230, 192, 200, 0.5);
 
@@ -984,7 +1022,11 @@
 
       color: var(--pastel-pill-text);
 
-      background: var(--pastel-pill-bg);
+      background-color: #FAD0C4 !important;
+
+      background-image: linear-gradient(135deg, #FAD0C4 0%, #FFD1FF 100%),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FAD0C4'/%3E%3C/svg%3E") !important;
 
       padding: 5px 14px;
 
@@ -1012,7 +1054,9 @@
 
       color: #6C3949;
 
-      background: rgba(255, 232, 238, 0.7);
+      background-color: #FFE8EE !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFE8EE'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(225, 170, 185, 0.5);
 
@@ -1026,7 +1070,11 @@
 
     .event-card-pastel .countdown-box {
 
-      background: linear-gradient(135deg, rgba(255, 250, 252, 0.95), rgba(255, 242, 246, 0.95));
+      background-color: #FFF6F9 !important;
+
+      background-image: linear-gradient(135deg, rgba(255, 250, 252, 0.95), rgba(255, 242, 246, 0.95)),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFF6F9'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(235, 185, 198, 0.5);
 
@@ -1042,7 +1090,11 @@
 
     .event-card-dark {
 
-      background: var(--dark-card-bg);
+      background-color: #1A0914 !important;
+
+      background-image: linear-gradient(150deg, #1A0914 0%, #2A0E1E 55%, #180611 100%),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%231A0914'/%3E%3C/svg%3E") !important;
 
       backdrop-filter: blur(16px);
 
@@ -1074,7 +1126,11 @@
 
     .event-card-dark .event-art {
 
-      background: radial-gradient(circle at center, rgba(58, 16, 32, 0.9) 0%, rgba(20, 5, 13, 0.85) 100%);
+      background-color: #260A17 !important;
+
+      background-image: radial-gradient(circle at center, rgba(58, 16, 32, 0.9) 0%, rgba(20, 5, 13, 0.85) 100%),
+
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23260A17'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(212, 175, 55, 0.35);
 
@@ -1196,7 +1252,9 @@
 
     .event-card-dark .timer-tile {
 
-      background: var(--dark-tile-bg);
+      background-color: #2C0E1C !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%232C0E1C'/%3E%3C/svg%3E") !important;
 
       border-color: rgba(212, 175, 55, 0.35);
 
@@ -1218,9 +1276,11 @@
 
     .event-card-dark .btn-action {
 
-      background: rgba(255, 255, 255, 0.08);
+      background-color: #2A0E1E !important;
 
-      color: #FFF0F4;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%232A0E1E'/%3E%3C/svg%3E") !important;
+
+      color: #FFF0F4 !important;
 
       border-color: rgba(212, 175, 55, 0.55);
 
@@ -1228,9 +1288,9 @@
 
     .event-card-dark .btn-action:hover {
 
-      background: var(--dark-btn-bg);
+      background: var(--dark-btn-bg) !important;
 
-      color: var(--dark-btn-text);
+      color: var(--dark-btn-text) !important;
 
       border-color: transparent;
 
@@ -1372,7 +1432,9 @@
 
       color: var(--burgundy-rich);
 
-      background: rgba(255, 235, 240, 0.8);
+      background-color: #FFEBF0 !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFEBF0'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(220, 155, 140, 0.4);
 
@@ -1436,7 +1498,9 @@
 
     .timer-tile {
 
-      background: #FFFFFF;
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(220, 155, 140, 0.4);
 
@@ -1528,7 +1592,9 @@
 
       border: 1.5px solid var(--rose-gold-rich);
 
-      background: #FFFFFF;
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       border-radius: 12px;
 
@@ -1540,9 +1606,9 @@
 
     .btn-action:hover, .btn-action:active {
 
-      background: var(--grad-btn);
+      background: var(--grad-btn) !important;
 
-      color: #FFFFFF;
+      color: #FFFFFF !important;
 
       border-color: transparent;
 
@@ -1570,7 +1636,9 @@
 
     .wish-box {
 
-      background: var(--card-bg);
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       backdrop-filter: blur(10px);
 
@@ -1600,7 +1668,9 @@
 
       color: var(--burgundy-rich);
 
-      background: rgba(255, 230, 236, 0.8);
+      background-color: #FFE6EC !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFE6EC'/%3E%3C/svg%3E") !important;
 
       border: 1px solid rgba(220, 155, 140, 0.4);
 
@@ -1616,11 +1686,11 @@
 
     .wish-authors {
 
-      font-family: var(--font-romantic); /* UsesAlex Brush / MonteCarlo script */
+      font-family: var(--font-romantic);
 
-      font-style: italic;              /* Keeps the stylish italic slant */
+      font-style: italic;
 
-      font-size: 2.1rem;               /* Slightly adjusted size for script elegance */
+      font-size: 2.1rem;
 
       font-weight: 600;
 
@@ -1662,7 +1732,9 @@
 
       border-radius: 16px;
 
-      background: var(--card-bg);
+      background-color: #FFFFFF !important;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23FFFFFF'/%3E%3C/svg%3E") !important;
 
       border: 1px solid var(--card-border);
 
@@ -1738,7 +1810,7 @@
 
       text-decoration: none;
 
-      color: #FFFFFF;
+      color: #FFFFFF !important;
 
       background: var(--grad-btn);
 
